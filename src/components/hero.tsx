@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "../components/Container";
 
-const Hero = () => {
+export default function Hero(){
     return (
         <>
 
@@ -50,5 +50,3 @@ function AmazonLogo() {
         </svg>
     );
 }
-
-export default Hero;
