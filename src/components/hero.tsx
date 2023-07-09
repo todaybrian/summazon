@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "./container";
+import Container from "./Container";
 
 const Hero = () => {
     return (
@@ -11,18 +11,10 @@ const Hero = () => {
                         <h1 className="text-4xl font-extrabold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
                             <span >Rise Above</span> the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Canopy</span> of Amazon Reviews
                         </h1>
-                        <p className="py-5 px-24 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-                            Nextly is a free landing page & marketing website
-                            template for startups and indie projects. Its built with
-                            Next.js & TailwindCSS. And its completely open-source.
+                        <p className="py-5 px-22 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+                        Summazon summarizes Amazon reviews, categorizing them into key metrics (pros/cons, price, performance, reliability, quality), helping buyers navigate through the sea of products and make informed purchases more easily.
                         </p>
-
-
                     </div>
-                </div>
-                <div aria-hidden="true" className="z-0 absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-                    <div className="blur-[106px] h-56 bg-gradient-to-br from-indigo-400 to-purple-400 dark:from-blue-700"></div>
-                    <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
                 </div>
 
             </Container>
