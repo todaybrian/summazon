@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import { NextSeo } from 'next-seo'
-import SearchBar from '@/components/SearchBar'
+import SearchBar from '../components/SearchBar'
 
 
 export default function Home() {

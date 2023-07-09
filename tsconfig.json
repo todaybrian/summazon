@@ -15,9 +15,13 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@app/*": ["./app/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"]
     }
-  },
+      },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Container.js"],
   "exclude": ["node_modules"]
 }
