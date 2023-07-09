@@ -34,9 +34,9 @@ export default function Search() {
 
             let url = "";
             if (isDemoMode) {
-                url = `https://todaybrian.github.io/Summazon-backend/return_summary/${productCode}.json`;
+                url = `https://summazon-eta.vercel.app/${productCode}.json`;
             } else {
-                url = `https://proxy.cors.sh/https://6bbe-184-145-100-87.ngrok-free.app/return_summary?id=${productCode}`;
+                url = `https://proxy.cors.sh/https://d4b7-184-145-100-87.ngrok-free.app/return_summary?id=${productCode}`;
             }
             console.log("making request to: " + url);
             //    res.headers.add("ngrok-skip-browser-warning", "true")
