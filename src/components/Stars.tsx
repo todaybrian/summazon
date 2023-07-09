@@ -2,7 +2,7 @@
 
 interface StarsProps {
     number: number;
-    className: string;
+    className?: string;
 }
 
 export default function Stars({ number, className = ""}: StarsProps) {
