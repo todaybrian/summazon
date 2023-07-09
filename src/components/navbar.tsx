@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 
-const Navbar = () => {
+export default function Navbar(){
     const navigation = {
         "Github-FE": "https://github.com/todaybrian/summazon",
         "Github-BE": "https://github.com/todaybrian/Summazon-backend",
@@ -103,5 +103,3 @@ const Navbar = () => {
     </>
     );
 }
-
-export default Navbar;
