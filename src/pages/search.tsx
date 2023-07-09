@@ -122,7 +122,7 @@ export default function Search() {
                             }
                         </div>
                     </>}
-                    {!isLoading && <>
+                    {(!isLoading && searchResultsRef && searchResultsRef.current) && <>
                         <h1 className="text-4xl font-bold text-gray-900">{searchResultsRef.current["Product Name"]}</h1>
 
                         <div className="grid grid-cols-2 gap-4 mt-7">
