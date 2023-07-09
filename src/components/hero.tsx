@@ -1,6 +1,6 @@
-import Container from "../components/Container";
+import Container from "./Container";
 
-export default function Hero({}){
+export default function Hero(){
     return (
         <>
             <Container className="flex flex-wrap pt-36">
