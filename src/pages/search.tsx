@@ -86,7 +86,7 @@ export default function Search() {
             <Navbar />
             <div className="max-w-7xl mx-auto px-10">
                 <div className="mx-auto">
-                    <SearchBar value={q} />
+                    <SearchBar value={q as string | undefined} />
                 </div>
             </div>
             <div className={`z-50 container mx-auto px-4 mt-7 ${isLoading && "animate-pulse"}`}>

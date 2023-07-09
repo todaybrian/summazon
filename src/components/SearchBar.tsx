@@ -1,7 +1,7 @@
 import isDemoMode from "..//settings";
 import Link from "next/link";
 
-export default function SearchBar({ value = "https://www.amazon.ca/Generative-Deep-Learning-Teaching-Machines/dp/1098134184/" }: { value?: string | string[]}) {
+export default function SearchBar({ value = "https://www.amazon.ca/Generative-Deep-Learning-Teaching-Machines/dp/1098134184/" }: { value?: string}) {
 
 
     return <>
