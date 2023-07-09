@@ -15,13 +15,10 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@app/*": ["./app/*"],
-      "@assets/*": ["./assets/*"],
-      "@components/*": ["./components/*"],
-      "@styles/*": ["./styles/*"],
-      "@utils/*": ["./utils/*"]
+      "@/*": ["./src/*"]
     }
-      },
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Container.js"],
   "exclude": ["node_modules"]
 }
+, "src/components/Navbar.js"
