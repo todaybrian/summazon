@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import Stars from "../components/Stars";
+import isDemoMode from "@/settings";
 import http from "http";
 
 import { useRouter } from "next/router";
@@ -29,24 +30,52 @@ export default function Search() {
                     productCode = match[1];
                 }
             } else return;
-            if(!productCode) return;
-            http.get(`http://localhost:5000/dummy?id=${productCode}`, (response) => {
-                let data = '';
-                response.on('data', (chunk) => {
-                    data += chunk;
-                });
+            if (!productCode) return;
 
-                response.on('end', () => {
-                    const parsedData = JSON.parse(data);
-                    console.log(data);
+            let url = "";
+            if (isDemoMode) {
+                url = `https://todaybrian.github.io/Summazon-backend/return_summary/${productCode}.json`;
+            } else {
+                url = `https://proxy.cors.sh/https://6bbe-184-145-100-87.ngrok-free.app/return_summary?id=${productCode}`;
+            }
+            console.log("making request to: " + url);
+            //    res.headers.add("ngrok-skip-browser-warning", "true")
+            fetch(url, {
+                headers: {
+                'x-cors-api-key': 'temp_eedb97e638d9985caf1a99548014ad49',
+                'User-Agent': 'awfawfwf',
+                'ngrok-skip-browser-warning': 'true'
+                }})
+                .then(response => response.json())
+                .then(parsedData => {
+                    console.log(parsedData);
 
-                    searchResultsRef.current = (parsedData);
+                    searchResultsRef.current = parsedData;
                     console.log(searchResultsRef.current);
                     setIsLoading(false);
+                })
+                .catch(error => {
+                    console.log(error);
                 });
-            }).on('error', (error) => {
-                console.log(error);
-            });
+
+
+            // http.get(url, (response) => {
+            //     let data = '';
+            //     response.on('data', (chunk) => {
+            //         data += chunk;
+            //     });
+
+            //     response.on('end', () => {
+            //         const parsedData = JSON.parse(data);
+            //         console.log(data);
+
+            //         searchResultsRef.current = (parsedData);
+            //         console.log(searchResultsRef.current);
+            //         setIsLoading(false);
+            //     });
+            // }).on('error', (error) => {
+            //     console.log(error);
+            // });
         }
     }, [q]);
 
@@ -104,14 +133,14 @@ export default function Search() {
                             <div>
                                 <Stars number={searchResultsRef.current["Rating"]} />
 
-                                <p className="text-lg text-gray-700 mt-4">{searchResultsRef.current["Description"]}</p>
+                                <div className="text-lg text-gray-700 mt-4" dangerouslySetInnerHTML={{ __html: searchResultsRef.current["Description"] }}></div>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 gap-4 mt-8">
                             {
                                 cards.map((card, index) => (
                                     <Fragment key={index}>
-                                        <Card title={card} content={searchResultsRef.current[card]} />
+                                        <Card title={card} content={searchResultsRef.current[card].replaceAll(" •", "\n •")} />
                                     </Fragment>
                                 ))
                             }

@@ -12,7 +12,7 @@ export default function Card({ title = "", content = "", isLoading = false }) {
             </div></>}
         {!isLoading && <>
             <h2 className="text-xl font-semibold ">{title}</h2>
-            <div className="text-gray-700 mt-2">
+            <div className="text-gray-700 mt-2 whitespace-pre-line	">
                 {content}
             </div>
 

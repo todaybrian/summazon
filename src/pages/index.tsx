@@ -15,7 +15,7 @@ export default function Home() {
       <div className="mx-auto max-w-6xl px-10">
         <SearchBar />
       </div>
-      <Footer />
+      <Footer isIndex={true}/>
 
     </>
   )

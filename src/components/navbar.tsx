@@ -4,7 +4,8 @@ import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
     const navigation = {
-        "Github": "https://github.com/todaybrian/summazon",
+        "Github-FE": "https://github.com/todaybrian/summazon",
+        "Github-BE": "https://github.com/todaybrian/Summazon-backend",
         "Hackathon": "https://lablab.ai/event/google-vertex-ai-hackathon",
     };
 
@@ -27,14 +28,13 @@ const Navbar = () => {
                                     <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                                         <span>
                                             <Image
-                                                src="/img/logo.svg"
+                                                src="/logo.png"
                                                 alt="N"
-                                                width="32"
-                                                height="32"
-                                                className="w-8"
+                                                width={893}
+                                                height={130}
+                                                className="h-7 w-auto"
                                             />
                                         </span>
-                                        <span>Summazon</span>
                                     </span>
                                 </Link>
 
