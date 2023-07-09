@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
 import Stars from "../components/Stars";
-import isDemoMode from "@/settings";
+import isDemoMode from "../settings";
 import http from "http";
 
 import { useRouter } from "next/router";
