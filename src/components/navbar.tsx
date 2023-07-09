@@ -9,9 +9,9 @@ const Navbar = () => {
     };
 
     return (<>
-        <div aria-hidden="true" className="z-0 absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-            <div className="blur-[106px] h-56 bg-gradient-to-br from-indigo-400 to-purple-400 dark:from-blue-700"></div>
-            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        <div aria-hidden="true" className="z-[-99] absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div className="z-[-99] blur-[106px] h-56 bg-gradient-to-br from-indigo-400 to-purple-400 dark:from-blue-700"></div>
+            <div className="z-[-99] blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
         </div>
 
         <div className="z-50 w-full">
@@ -68,9 +68,9 @@ const Navbar = () => {
                                                 {key}
                                             </Link>
                                         ))}
-                                        <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                                        {/* <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                                             Get Started
-                                        </Link>
+                                        </Link> */}
                                     </>
                                 </Disclosure.Panel>
                             </div>
@@ -91,12 +91,12 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="hidden mr-3 space-x-4 lg:flex nav__item">
+                {/* <div className="hidden mr-3 space-x-4 lg:flex nav__item">
                     <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
                         Get Started
                     </Link>
 
-                </div>
+                </div> */}
             </nav>
 
         </div>

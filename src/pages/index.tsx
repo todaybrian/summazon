@@ -12,7 +12,7 @@ export default function Home() {
       <NextSeo title="Summazon: Rise Above the Canopy of Amazon Reviews" description="Summazon summarizes Amazon reviews, categorizing them into key metrics (pros/cons, price, performance, reliability, quality), helping buyers navigate through the sea of products and make informed purchases more easily." />
       <Navbar />
       <Hero />
-      <div className="mx-60">
+      <div className="mx-auto max-w-6xl px-10">
         <SearchBar />
       </div>
       <Footer />

@@ -12,7 +12,7 @@ const Hero = () => {
                             <span >Rise Above</span> the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Canopy</span> of Amazon Reviews
                         </h1>
                         <p className="py-5 px-22 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-                        Summazon summarizes Amazon reviews, categorizing them into key metrics (pros/cons, price, performance, reliability, quality), helping buyers navigate through the sea of products and make informed purchases more easily.
+                            Summazon summarizes Amazon reviews, categorizing them into key metrics (pros/cons, price, performance, reliability, quality), helping buyers navigate through the sea of products and make informed purchases more easily.
                         </p>
                     </div>
                 </div>
