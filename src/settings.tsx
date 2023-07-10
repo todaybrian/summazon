@@ -1,3 +1,3 @@
-var isDemoMode = false;
+var isDemoMode = true;
 
 export default isDemoMode;

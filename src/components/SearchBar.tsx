@@ -22,11 +22,14 @@ export default function SearchBar({ value = "https://www.amazon.ca/Generative-De
             <><div className="mx-auto mt-2">
                 <i>Try our Demos: (Due to the high costs associated with web scraping, these are the only available demos.)</i>
                 <div className="flex gap-4 mt-2">
-                    <Link href="/search?q=https://www.amazon.ca/Google-GVU6C-Pixel-7-128GB-Obsidian/dp/B0BCQXXRJJ/" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Google Pixel 7</Link>
-                    <Link href="/search?q=https://www.amazon.ca/LiangCuber-Tornado-MagLev-Stickerless-Magnetic/dp/B0BG734Y6G/ref=pd_ci_mcx_mh_mcx_views_0?content-id=amzn1.sym.497f2919-28f2-4b22-9bda-5f5fc143fcd1" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Tornado V3 Speedcube</Link>
-
+                    <a href="/search?q=https://www.amazon.ca/Google-GVU6C-Pixel-7-128GB-Obsidian/dp/B0BCQXXRJJ/" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Google Pixel 7</a>
+                    <a href="/search?q=https://www.amazon.ca/LiangCuber-Tornado-MagLev-Stickerless-Magnetic/dp/B0BG734Y6G/ref=pd_ci_mcx_mh_mcx_views_0?content-id=amzn1.sym.497f2919-28f2-4b22-9bda-5f5fc143fcd1" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Tornado V3 Speedcube</a>
+                    <a href="/search?q=https%3A%2F%2Fwww.amazon.ca%2FNintendo-SwitchTM-Neon-Blue-Joy%25E2%2580%2591ConTM%2Fdp%2FB0BFJWCYTL%2F%3F_encoding%3DUTF8%26content-id%3Damzn1.sym.c23fd69a-b843-4aa8-bd42-94a2c7e3f3b7%26ref_%3Dpd_gw_crs_zg_bs_3198031" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Nintendo Switch</a>
+                    <a href="/search?q=https%3A%2F%2Fwww.amazon.ca%2FHP-Display-Processor-Graphics-15-fd0000ca%2Fdp%2FB0BX7FD8H7%2F%3Fref_%3Dast_sto_dp" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">HP Laptop</a>
+                    <a href="/search?q=https%3A%2F%2Fwww.amazon.ca%2FMoMa-MUJI-Point-0-5mm-Black%2Fdp%2FB00E1IBPGU%2Fref%3Dsr_1_6%3Fcrid%3D2HKAOU9VLFHJN" className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Muji Pens</a>
                 </div>
             </div> </>
         }
     </>;
 }
+

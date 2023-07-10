@@ -36,7 +36,8 @@ export default function Search() {
             if (isDemoMode) {
                 url = `https://summazon-eta.vercel.app/${productCode}.json`;
             } else {
-                url = `https://proxy.cors.sh/https://6fa7-184-145-100-87.ngrok-free.app/return_summary?id=${productCode}`;
+                url = `http://localhost:5000/return_summary?id=${productCode}`;
+                // url = `https://proxy.cors.sh/https://6fa7-184-145-100-87.ngrok-free.app/return_summary?id=${productCode}`;
             }
             console.log("making request to: " + url);
             //    res.headers.add("ngrok-skip-browser-warning", "true")
@@ -125,12 +126,12 @@ export default function Search() {
                     {(!isLoading && searchResultsRef && searchResultsRef.current) && <>
                         <h1 className="text-4xl font-bold text-gray-900">{searchResultsRef.current["Product Name"]}</h1>
 
-                        <div className="grid grid-cols-2 gap-4 mt-7">
+                        <div className="grid grid-cols-3 gap-4 mt-7">
                             <div>
                                 <img src={searchResultsRef.current["Image"]} alt="Product image" className="w-full h-auto object-cover rounded-lg shadow-lg" />
 
                             </div>
-                            <div>
+                            <div className="col-span-2">
                                 <Stars number={searchResultsRef.current["Rating"]} />
 
                                 <div className="text-lg text-gray-700 mt-4" dangerouslySetInnerHTML={{ __html: searchResultsRef.current["Description"] }}></div>
