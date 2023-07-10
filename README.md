@@ -19,7 +19,7 @@ Now it’s time to say goodbye to information overload and let *Summazon* help y
 
 Frontend: The front end was constructed using **Next.js** and **Tailwind CSS**, with hosting on **Vercel**. Every time a search is performed on the page, regex is used to extract the product ID from the Amazon Link, and an API request is made to our backend.
 
-Backend: The back end was constructed using **Flask**. When a request is made, Amazon review data is scraped using **Playwright**. This scraped review data is sent along with our prompts to the **Google PaLM-2 Chat-Bison 001** AI (a Large Language Model similar to ChatGPT), for summaries.
+[Backend](https://github.com/todaybrian/Summazon-backend): The back end was constructed using **Flask**. When a request is made, Amazon review data is scraped using **Playwright**. This scraped review data is sent along with our prompts to the **Google PaLM-2 Chat-Bison 001** AI (a Large Language Model similar to ChatGPT), for summaries.
 
 ## Challenges we encountered:
 1. Connecting the front-end and back-end posed significant challenges, with numerous networking and CORS errors. Eventually, we resorted to using a CORS proxy along with ngrok to enable front-end access to the back-end. We recognized the need to gain more experience with server-side requests.
