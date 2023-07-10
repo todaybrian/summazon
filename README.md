@@ -1,5 +1,5 @@
 # Summazon
-![Summazon Cover Image](https://github.com/todaybrian/summazon/assets/13337661/f3dff826-b4c9-4830-918f-1d4a47ee1f04)
+![Summazon Cover Image](https://github.com/todaybrian/summazon/assets/13337661/21e0c24c-1a55-4021-a5f6-473c7d8fa44f)
 
 Created for the [Google Cloud Vertex AI hackathon](https://lablab.ai/event/google-vertex-ai-hackathon).
 
